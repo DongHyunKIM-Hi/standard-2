@@ -45,4 +45,25 @@ public class MemoController {
         memoService.deleteMemo(id);
         return "삭제됐어요";
     }
+
+    @GetMapping("/test/1")
+    public void test1() {
+        memoService.testFirstLevelCache();
+    }
+
+    @GetMapping("/test/2")
+    public void test2() {
+        memoService.updateWithoutTx();
+    }
+
+    @GetMapping("/test/3")
+    public void test3() {
+        memoService.updateWithTx();
+    }
+
+    @GetMapping("/test/4")
+    public void test4() {
+        memoService.testWriteBehind();
+    }
+
 }

@@ -36,4 +36,8 @@ public class Memo {
         this.title = (dto.getTitle() == null) ? this.title : dto.getTitle();
         this.content = (dto.getContent() == null) ? this.content : dto.getContent();
     }
+
+    public void updateContent(String content) {
+        this.content = content;
+    }
 }

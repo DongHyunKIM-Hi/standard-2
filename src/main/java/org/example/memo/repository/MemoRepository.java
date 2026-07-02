@@ -8,9 +8,5 @@ import org.springframework.stereotype.Repository;
 
 public interface MemoRepository extends JpaRepository<Memo, Long> {
 
-    Memo findByContent(String content);
-
-    Memo findByDinnerJMT(String dinnerJMT);
-
 
 }
