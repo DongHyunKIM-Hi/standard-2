@@ -1,4 +1,4 @@
-package org.example.memo;
+package org.example.memo.model.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -6,7 +6,7 @@ import lombok.Getter;
 @Getter
 @AllArgsConstructor
 public class MemoResponseDto {
-    private int id;
+    private long id;
     private String title;
     private String content;
 }
